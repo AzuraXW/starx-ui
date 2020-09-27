@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>基本使用 | StarxUI</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <script charset="utf-8" src="/starx-ui/js/disable-user-zoom.js"></script>
+    <meta name="description" content="another lightweight ui toolkit for Vue.js 2.X">
+    <link rel="preload" href="/starx-ui/assets/css/0.styles.6f3d9473.css" as="style"><link rel="preload" href="/starx-ui/assets/js/app.8f276f94.js" as="script"><link rel="preload" href="/starx-ui/assets/js/2.759668ac.js" as="script"><link rel="preload" href="/starx-ui/assets/js/9.66e5e771.js" as="script"><link rel="prefetch" href="/starx-ui/assets/js/10.a8fb89ff.js"><link rel="prefetch" href="/starx-ui/assets/js/11.e3d7fb68.js"><link rel="prefetch" href="/starx-ui/assets/js/3.c5f0ced2.js"><link rel="prefetch" href="/starx-ui/assets/js/4.0e98fa99.js"><link rel="prefetch" href="/starx-ui/assets/js/5.596aa124.js"><link rel="prefetch" href="/starx-ui/assets/js/6.66373a01.js"><link rel="prefetch" href="/starx-ui/assets/js/7.cbab241e.js"><link rel="prefetch" href="/starx-ui/assets/js/8.cde69b12.js">
+    <link rel="stylesheet" href="/starx-ui/assets/css/0.styles.6f3d9473.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/starx-ui/" class="home-link router-link-active"><!----> <span class="site-name">StarxUI</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/starx-ui/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/starx-ui/component/guide/introduction.html" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/starx-ui/theme/" class="nav-link">
+  主题
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/starx-ui/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/starx-ui/component/guide/introduction.html" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/starx-ui/theme/" class="nav-link">
+  主题
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>快速开始</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/starx-ui/component/guide/introduction.html" class="sidebar-link">简介</a></li><li><a href="/starx-ui/component/guide/guide.html" aria-current="page" class="active sidebar-link">基本使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/starx-ui/component/guide/guide.html#安装" class="sidebar-link">安装</a></li><li class="sidebar-sub-header"><a href="/starx-ui/component/guide/guide.html#全部引入" class="sidebar-link">全部引入</a></li><li class="sidebar-sub-header"><a href="/starx-ui/component/guide/guide.html#按需加载" class="sidebar-link">按需加载</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>基础组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/starx-ui/component/basic/button.html" class="sidebar-link">Button 按钮</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <p>输入下列命令可以安装starx-ui</p> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> i starx-ui
+</code></pre></div><h2 id="全部引入"><a href="#全部引入" class="header-anchor">#</a> 全部引入</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> StarxUI <span class="token keyword">from</span> <span class="token string">'starx-ui'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">'starx-ui/lib/styles/starx-ui.css'</span><span class="token punctuation">;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>StarxUI<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="按需加载"><a href="#按需加载" class="header-anchor">#</a> 按需加载</h2> <p>1、按需加载需要借助 <code>babel-plugin-component</code> 包。下载好之后，在你的 <code>.babelrc</code> 文件中添加如下内容</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">[</span><span class="token string">&quot;component&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          <span class="token string">&quot;libraryName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;starx-ui&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;libDir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lib&quot;</span><span class="token punctuation">,</span>
+          <span class="token string">&quot;styleLibrary&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;styles&quot;</span><span class="token punctuation">,</span>
+              <span class="token string">&quot;base&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// no base.css file</span>
+              <span class="token string">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;[module].css&quot;</span>
+          <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>2、示例加载一个<code>Button</code>组件：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Button <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'starx-ui'</span><span class="token punctuation">;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">'sButton'</span><span class="token punctuation">,</span> Button<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/starx-ui/component/guide/introduction.html" class="prev">
+        简介
+      </a></span> <span class="next"><a href="/starx-ui/component/basic/button.html">
+        Button 按钮
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/starx-ui/assets/js/app.8f276f94.js" defer></script><script src="/starx-ui/assets/js/2.759668ac.js" defer></script><script src="/starx-ui/assets/js/9.66e5e771.js" defer></script>
+  </body>
+</html>
